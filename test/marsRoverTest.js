@@ -46,4 +46,20 @@ describe('mars rover', () => {
 
 		chai.assert.deepEqual(finalPosition, [2, 0])
 	})
+
+	it.skip("moves to west when facing west",()=>{})
+	it.skip("moves to east when facing east",()=>{})
+	it.skip("moves from upper position to zero when going north",()=>{})
+	it.skip("moves from lower position to max when going south",()=>{})
+	it.skip("moves from most left position to most right when going west",()=>{})
+	it.skip("moves from most right position to most left when going east",()=>{})
+	it.skip("turn from north to west when command L",()=>{})
+	it.skip("turn from west to south when command L",()=>{})
+	it.skip("turn from south to east when command L",()=>{})
+	it.skip("turn from east to north when command L",()=>{})
+	it.skip("turn from north to east when command R",()=>{})
+	it.skip("turn from east to south when command R",()=>{})
+	it.skip("turn from south to west when command R",()=>{})
+	it.skip("turn from west to north when command R",()=>{})
+
 })

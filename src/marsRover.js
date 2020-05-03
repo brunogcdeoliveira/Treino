@@ -1,9 +1,15 @@
 let marsRover = (aGrid,aStartPosition,aCommands)=>{
-	let aFinalPosition = [0,0]
+	let sDirection = aStartPosition[2]
+
+	let position = aStartPosition.slice(0, 2)
 	for (let i = 0; i < aCommands.length; i++) {
-		aFinalPosition[0]++
+		if(sDirection === 'S'){
+			position[0]--
+		}else if(sDirection === 'N'){
+			position[0]++
+		}
 	}
-	return aFinalPosition
+	return position
 }
 
 module.exports = marsRover
